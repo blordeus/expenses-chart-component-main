@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script type="module" src="./app.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+</head>
+<body class="text-lg bg-neutral3 grid place-items-center min-h-screen p-4 text-neutral1">
+  <main class="max-w-sm grid gap-4">
+  <div class="bg-accent1 p-4 rounded-lg flex space-x-8 justify-between items-center">
+   <div class=" grid gap-4">   
+    <h2 class="text-neutral4">My balance</h2>
+    <p class="text-neutral4 text-2xl font-bold">$921.48</p>
+  </div>
+   <div class="grid gap-2">
+  <img src="./images/logo.svg" alt="logo">
+   </div>  
+</div>
+
+  <div class="bg-neutral4 p-4 rounded-lg grid gap-6">
+    
+    <div class="grid gap-2">
+      <h1 class="text-2xl font-bold">
+      Spending - Last 7 days
+      </h1>
+    </div>
+      <!--Pull live data -->
+
+    <div class="flex justify-between gap-3 mt-10 items-end" id="chart"></div>
+<!--
+    <div class="flex justify-between gap-3 mt-10">
+        <div class="relative">
+          <button aria-label="Monday's spending" class="peer flex-1 grid gap-3">
+            <div class=" bg-accent1 w-full h-48 rounded-sm"></div>
+            <p class="text-xs text-neutral2">mon</p>
+          </button>
+          <p class="text-xs text-neutral2 bg-neutral1 p-1 rounded-sm absolute -top-8 left-1/2 -translate-x-1/2" aria-hidden="true">$17.45</p>
+        </div>
+        <div class="relative">
+          <button aria-label="Monday's spending" class="peer flex-1 grid gap-3">
+            <div class=" bg-accent1 w-full h-48 rounded-sm"></div>
+            <p class="text-xs text-neutral2">tues</p>
+          </button>
+          <p class="text-xs text-neutral2 bg-neutral1 p-1 rounded-sm absolute -top-8 left-1/2 -translate-x-1/2" aria-hidden="true">$17.45</p>
+        </div>
+        <div class="relative">
+          <button aria-label="Monday's spending" class="peer flex-1 grid gap-3">
+            <div class=" bg-accent1 w-full h-48 rounded-sm"></div>
+            <p class="text-xs text-neutral2">wed</p>
+          </button>
+          <p class="text-xs text-neutral2 bg-neutral1 p-1 rounded-sm absolute -top-8 left-1/2 -translate-x-1/2" aria-hidden="true">$17.45</p>
+        </div>
+        <div class="relative">
+          <button aria-label="Monday's spending" class="peer flex-1 grid gap-3">
+            <div class=" bg-accent1 w-full h-48 rounded-sm"></div>
+            <p class="text-xs text-neutral2">thurs</p>
+          </button>
+          <p class="text-xs text-neutral2 bg-neutral1 p-1 rounded-sm absolute -top-8 left-1/2 -translate-x-1/2" aria-hidden="true">$17.45</p>
+        </div>
+        <div class="relative">
+          <button aria-label="Monday's spending" class="peer flex-1 grid gap-3">
+            <div class=" bg-accent1 w-full h-48 rounded-sm"></div>
+            <p class="text-xs text-neutral2">fri</p>
+          </button>
+          <p class="text-xs text-neutral2 bg-neutral1 p-1 rounded-sm absolute -top-8 left-1/2 -translate-x-1/2" aria-hidden="true">$17.45</p>
+        </div>
+        <div class="relative">
+          <button aria-label="Monday's spending" class="peer flex-1 grid gap-3">
+            <div class=" bg-accent1 w-full h-48 rounded-sm"></div>
+            <p class="text-xs text-neutral2">sat</p>
+          </button>
+          <p class="text-xs text-neutral2 bg-neutral1 p-1 rounded-sm absolute -top-8 left-1/2 -translate-x-1/2" aria-hidden="true">$17.45</p>
+        </div>
+        <div class="relative">
+          <button aria-label="Monday's spending" class="peer flex-1 grid gap-3">
+            <div class=" bg-accent1 w-full h-48 rounded-sm"></div>
+            <p class="text-xs text-neutral2">sun</p>
+          </button>
+          <p class="text-xs text-neutral2 bg-neutral1 p-1 rounded-sm absolute -top-8 left-1/2 -translate-x-1/2" aria-hidden="true">$17.45</p>
+        </div>
+
+    </div>
+    -->
+    
+      <div class="h-[1px] w-full bg-neutral3"></div>
+
+   <div class="flex space-x-8 justify-between items-end">
+    <div class="grid gap-2">
+      <h2 class="text-neutral2">Total this month</h2>
+      <p class="text-3xl font-bold">$478.33</p>
+      </div>
+      <div class="grid text-right">
+      <p class="text-xl font-bold">+2.4%</p>
+      <h2 class="text-neutral2">from last month</h2>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  
+  <div class="attribution container text-sm hidden">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="#">Bryan Lordeus</a>.
+  </div>
+</main>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+</body>
+</html>
