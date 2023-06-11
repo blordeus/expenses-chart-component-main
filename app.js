@@ -19,10 +19,10 @@ function generateChartItem(item){
   return `
   <div class="relative flex-1 grid">
    <button aria-label="${data.dayName}'s spending was ${formatMoneyToDollars(data.dayAmt)}" class="peer grid gap-3">
-          <div class="${data.currentDay === true ? "bg-accent2" : "bg-accent1"} rounded-sm h-0" style="height: ${data.dayAmt * 1.5}px;"></div>
+          <div class="${data.currentDay === true ? "bg-accent2" : "bg-accent1"} rounded-sm h-0 hover:opacity-70" style="height: ${data.dayAmt * 1.5}px;"></div>
           <p class="text-xs text-neutral2">${data.dayAbbr}</p>
       </button>
-      <p class="text-xs p-1 text-neutral4 bg-neutral1 p-1 rounded-sm absolute -top-8 left-1/2 -translate-x-1/2 transition-opacity duration-300 opacity-0 peer-focus:opacity-100 peer-hover:opacity-100" aria-hidden="true">${formatMoneyToDollars(data.dayAmt)}</p>
+      <p class="text-xs text-neutral4 bg-neutral1 p-1 rounded-sm absolute -top-8 left-1/2 -translate-x-1/2 transition-opacity duration-300 opacity-0 peer-focus:opacity-100 peer-hover:opacity-100" aria-hidden="true">${formatMoneyToDollars(data.dayAmt)}</p>
   </div>
   `;
 }
